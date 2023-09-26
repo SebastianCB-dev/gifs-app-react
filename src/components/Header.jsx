@@ -2,7 +2,7 @@ import './header.css'
 
 const goToGithubProject = () => {
   // TODO: Update URL
-  globalThis.window.open('https://www.google.com', '_self')
+  globalThis.window.open('https://github.com/SebastianCB-dev/gifs-app-react', '_self')
 }
 
 export const HeaderComponent = () => {
