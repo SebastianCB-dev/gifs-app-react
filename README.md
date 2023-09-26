@@ -1,4 +1,4 @@
-# Gifs App React
+# Gifs App React + SWC + Standard JS + PNPM
  
 ## Description
 This is a simple app that shows gifs from the Giphy API. It was made with React and some hooks.
