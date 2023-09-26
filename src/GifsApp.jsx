@@ -1,10 +1,13 @@
 import { useState } from 'react'
+// Components
+import { GifsResultComponent } from './components/GifsResultComponent'
 import { HeaderComponent } from './components/Header'
 import { InputGifComponent } from './components/InputGif'
 
 export const GifsApp = () => {
-  const [querySearch, setQuerySearch] = useState('')
+  const [querySearch, setQuerySearch] = useState('React JS')
   const updateQuerySearch = (query) => {
+    if (query === querySearch) return
     setQuerySearch(query)
   }
 
@@ -15,6 +18,7 @@ export const GifsApp = () => {
       {/* Input */}
       <InputGifComponent updateQuerySearch={updateQuerySearch} />
       {/* Results */}
+      <GifsResultComponent querySearch={querySearch} />
     </>
   )
 }
