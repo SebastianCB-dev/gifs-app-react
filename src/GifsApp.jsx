@@ -5,7 +5,6 @@ import { InputGifComponent } from './components/InputGif'
 export const GifsApp = () => {
   const [querySearch, setQuerySearch] = useState('')
   const updateQuerySearch = (query) => {
-    console.log({ query })
     setQuerySearch(query)
   }
 

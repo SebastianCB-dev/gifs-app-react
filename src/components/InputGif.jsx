@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
 import './inputGif.css'
 
@@ -27,4 +28,8 @@ export const InputGifComponent = ({ updateQuerySearch }) => {
       <button type='submit'><i className='fa fa-search' /></button>
     </form>
   )
+}
+
+InputGifComponent.propTypes = {
+  updateQuerySearch: PropTypes.func.isRequired
 }
