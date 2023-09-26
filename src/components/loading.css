@@ -1,0 +1,21 @@
+.loader {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 30px;
+  background-color: rgb(255, 166, 0);
+  border: 2px solid rgb(199, 130, 0);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+}
+
+.loader p {
+  color: #000;
+  text-align: center;
+  line-height: 26px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
