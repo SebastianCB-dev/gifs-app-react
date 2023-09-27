@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
-import './loading.css'
+import './css/loading.css'
 export const LoadingComponent = ({ isLoading }) => {
   return (
     <>
-      {true &&
+      {isLoading &&
       (
         <div className='loader'>
           <p>Fetching data, please wait.</p>

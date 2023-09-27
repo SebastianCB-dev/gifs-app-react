@@ -2,13 +2,14 @@ import { useFetchGifs } from '../hooks/useFetchGifs'
 import { GifItem } from './GifItem'
 import { LoadingComponent } from './LoadingComponent'
 import PropTypes from 'prop-types'
-import './gifResult.css'
+import './css/gifResult.css'
 
 export const GifsResultComponent = ({ querySearch }) => {
   const { gifs, isLoading } = useFetchGifs(querySearch)
   return (
     <>
       <LoadingComponent isLoading={isLoading} />
+      <h2 className='title-search'>{querySearch}</h2>
       <div className='gifs-container'>
         {
           gifs.map((gif) => (

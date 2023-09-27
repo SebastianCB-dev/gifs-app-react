@@ -1,4 +1,4 @@
-import './header.css'
+import './css/header.css'
 
 const goToGithubProject = () => {
   globalThis.window.open('https://github.com/SebastianCB-dev/gifs-app-react', '_self')

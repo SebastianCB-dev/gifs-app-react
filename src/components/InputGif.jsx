@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import './inputGif.css'
+import './css/inputGif.css'
 
 export const InputGifComponent = ({ updateQuerySearch }) => {
   const [querySearch, setQuerySearch] = useState('')
@@ -24,6 +24,7 @@ export const InputGifComponent = ({ updateQuerySearch }) => {
         onChange={(e) => setQuerySearch(e.target.value)}
         value={querySearch}
         placeholder='Search using a term eg. League of Legends'
+        maxLength={30}
       />
       <button type='submit'><i className='fa fa-search' /></button>
     </form>
