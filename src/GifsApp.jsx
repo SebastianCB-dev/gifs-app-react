@@ -7,6 +7,7 @@ import { InputGifComponent } from './components/InputGif'
 export const GifsApp = () => {
   const [querySearch, setQuerySearch] = useState('React JS')
   const updateQuerySearch = (query) => {
+    if (querySearch.toLowerCase() === query.toLowerCase()) return
     setQuerySearch(query)
   }
 
