@@ -9,7 +9,7 @@ export const HeaderComponent = () => {
     <>
       <section className='header'>
         <img
-          src='../../assets/imgs/reacticon.png'
+          src='../../reacticon.png'
           className='image-header'
           alt='React Logo'
         />
