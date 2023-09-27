@@ -12,7 +12,7 @@ export const GifsResultComponent = ({ querySearch }) => {
       <h2 className='title-search'>{querySearch}</h2>
       <div className='gifs-container'>
         {
-          gifs.map((gif) => (
+          !isLoading && gifs.map((gif) => (
             <GifItem
               key={gif.id}
               title={gif.title}
